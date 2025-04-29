@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(hsl(240, 76%, 23%), hsl(199, 100%, 50%));
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+table, tr, td{
+    border: 2px solid; 
+    border-collapse: collapse;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.screen {
+    display: block;
+}
+
+.menu-button, .input-button {
+    display: block;
+    width: 250px;
+    margin: 15px auto;
+    padding: 10px;
+    font-size: 18px;
+    background-color: navy;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.player-input {
+    width: 250px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+}
+.game-container {
+    display: flex;
+    gap: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-gap: 2px;
+}
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid navy;
+    background-color: lightblue;
+    cursor: pointer;
+}
+.cell.hit {
+    background-color: red;
+    pointer-events: none;
+}
+.cell.miss {
+    background-color: white;
+    pointer-events: none;
+}
+.invisible {
+    color: lightblue;
+}
+.ship {
+    background-color: grey;
+}
+.focus
+{
+    border-color: red;
+    border-width: 20;
+}
+.end
+{
+    pointer-events: none;
+}
+#message {
+    margin-left: 480px;    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+#back-to-menu, #start-pvp-game {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: navy;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    margin-left: 40px; 
+    margin-top: 20px;
+}
+
+.dropbtn {
+    color: white;
+    border: none;
+}
+
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: -100px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content {display: block;}
